@@ -55,12 +55,24 @@
                                     <constraint firstItem="4iD-4P-zjL" firstAttribute="width" secondItem="5sQ-Zw-Joz" secondAttribute="width" id="lo2-j0-Ca0"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yY4-jY-cJP">
+                                <rect key="frame" x="136" y="642" width="39" height="30"/>
+                                <state key="normal" title="Close"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nfZ-wS-vTJ">
+                                <rect key="frame" x="235.5" y="642" width="47" height="30"/>
+                                <state key="normal" title="Reload"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="yY4-jY-cJP" firstAttribute="top" secondItem="Gep-kb-0ET" secondAttribute="bottom" constant="80" id="8oy-eR-Kwy"/>
+                            <constraint firstItem="nfZ-wS-vTJ" firstAttribute="top" secondItem="Kiv-Af-Rt3" secondAttribute="bottom" constant="80" id="P32-Wf-icw"/>
+                            <constraint firstItem="yY4-jY-cJP" firstAttribute="centerX" secondItem="Gep-kb-0ET" secondAttribute="centerX" id="a2y-Oo-TgW"/>
                             <constraint firstItem="Kiv-Af-Rt3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gvu-IB-OP6"/>
                             <constraint firstItem="Kiv-Af-Rt3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hD7-xE-zlw"/>
+                            <constraint firstItem="nfZ-wS-vTJ" firstAttribute="centerX" secondItem="whg-VH-sXk" secondAttribute="centerX" id="wP7-CI-HWw"/>
                         </constraints>
                     </view>
                 </viewController>
