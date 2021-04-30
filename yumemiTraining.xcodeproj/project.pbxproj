@@ -3,18 +3,25 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A43BF4B2262E784700711441 /* YumemiWeather in Frameworks */ = {isa = PBXBuildFile; productRef = A43BF4B1262E784700711441 /* YumemiWeather */; };
+		A43BF4B726303BAF00711441 /* sunny.png in Resources */ = {isa = PBXBuildFile; fileRef = A43BF4B626303BAF00711441 /* sunny.png */; };
+		A43BF4BC26303BD700711441 /* cloudy.png in Resources */ = {isa = PBXBuildFile; fileRef = A43BF4BB26303BD700711441 /* cloudy.png */; };
+		A43BF4C126303BE000711441 /* rainy.png in Resources */ = {isa = PBXBuildFile; fileRef = A43BF4C026303BE000711441 /* rainy.png */; };
 		A45734CD262D7B2B003B0754 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45734CC262D7B2B003B0754 /* AppDelegate.swift */; };
 		A45734CF262D7B2B003B0754 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45734CE262D7B2B003B0754 /* SceneDelegate.swift */; };
-		A45734D1262D7B2B003B0754 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45734D0262D7B2B003B0754 /* ViewController.swift */; };
+		A45734D1262D7B2B003B0754 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45734D0262D7B2B003B0754 /* WeatherViewController.swift */; };
 		A45734D4262D7B2B003B0754 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A45734D2262D7B2B003B0754 /* Main.storyboard */; };
 		A45734D6262D7B2D003B0754 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A45734D5262D7B2D003B0754 /* Assets.xcassets */; };
 		A45734D9262D7B2D003B0754 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A45734D7262D7B2D003B0754 /* LaunchScreen.storyboard */; };
 		A45734E4262D7B2D003B0754 /* yumemiTrainingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45734E3262D7B2D003B0754 /* yumemiTrainingTests.swift */; };
 		A45734EF262D7B2D003B0754 /* yumemiTrainingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45734EE262D7B2D003B0754 /* yumemiTrainingUITests.swift */; };
+		A4BB45302630634800623609 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BB452F2630634800623609 /* WeatherView.swift */; };
+		A4BB45352630637D00623609 /* WeatherView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4BB45342630637D00623609 /* WeatherView.xib */; };
+		A4CFD4B2263BE162000CCD92 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CFD4B1263BE162000CCD92 /* WeatherModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +42,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A43BF4B626303BAF00711441 /* sunny.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunny.png; sourceTree = "<group>"; };
+		A43BF4BB26303BD700711441 /* cloudy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloudy.png; sourceTree = "<group>"; };
+		A43BF4C026303BE000711441 /* rainy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rainy.png; sourceTree = "<group>"; };
 		A45734C9262D7B2B003B0754 /* yumemiTraining.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yumemiTraining.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A45734CC262D7B2B003B0754 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A45734CE262D7B2B003B0754 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A45734D0262D7B2B003B0754 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A45734D0262D7B2B003B0754 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		A45734D3262D7B2B003B0754 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A45734D5262D7B2D003B0754 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A45734D8262D7B2D003B0754 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +59,9 @@
 		A45734EA262D7B2D003B0754 /* yumemiTrainingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = yumemiTrainingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A45734EE262D7B2D003B0754 /* yumemiTrainingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yumemiTrainingUITests.swift; sourceTree = "<group>"; };
 		A45734F0262D7B2D003B0754 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4BB452F2630634800623609 /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
+		A4BB45342630637D00623609 /* WeatherView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherView.xib; sourceTree = "<group>"; };
+		A4CFD4B1263BE162000CCD92 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A43BF4B2262E784700711441 /* YumemiWeather in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,11 +113,16 @@
 		A45734CB262D7B2B003B0754 /* yumemiTraining */ = {
 			isa = PBXGroup;
 			children = (
+				A4BB45252630625F00623609 /* Model */,
+				A4BB452A2630628500623609 /* View */,
+				A4BB452B263062BF00623609 /* Controller */,
 				A45734CC262D7B2B003B0754 /* AppDelegate.swift */,
 				A45734CE262D7B2B003B0754 /* SceneDelegate.swift */,
-				A45734D0262D7B2B003B0754 /* ViewController.swift */,
 				A45734D2262D7B2B003B0754 /* Main.storyboard */,
 				A45734D5262D7B2D003B0754 /* Assets.xcassets */,
+				A43BF4B626303BAF00711441 /* sunny.png */,
+				A43BF4BB26303BD700711441 /* cloudy.png */,
+				A43BF4C026303BE000711441 /* rainy.png */,
 				A45734D7262D7B2D003B0754 /* LaunchScreen.storyboard */,
 				A45734DA262D7B2D003B0754 /* Info.plist */,
 			);
@@ -128,6 +147,31 @@
 			path = yumemiTrainingUITests;
 			sourceTree = "<group>";
 		};
+		A4BB45252630625F00623609 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A4CFD4B1263BE162000CCD92 /* WeatherModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A4BB452A2630628500623609 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A4BB452F2630634800623609 /* WeatherView.swift */,
+				A4BB45342630637D00623609 /* WeatherView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A4BB452B263062BF00623609 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A45734D0262D7B2B003B0754 /* WeatherViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,6 +188,9 @@
 			dependencies = (
 			);
 			name = yumemiTraining;
+			packageProductDependencies = (
+				A43BF4B1262E784700711441 /* YumemiWeather */,
+			);
 			productName = yumemiTraining;
 			productReference = A45734C9262D7B2B003B0754 /* yumemiTraining.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +262,9 @@
 				Base,
 			);
 			mainGroup = A45734C0262D7B2B003B0754;
+			packageReferences = (
+				A43BF4B0262E784700711441 /* XCRemoteSwiftPackageReference "ios-training" */,
+			);
 			productRefGroup = A45734CA262D7B2B003B0754 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -231,8 +281,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4BB45352630637D00623609 /* WeatherView.xib in Resources */,
 				A45734D9262D7B2D003B0754 /* LaunchScreen.storyboard in Resources */,
+				A43BF4C126303BE000711441 /* rainy.png in Resources */,
+				A43BF4B726303BAF00711441 /* sunny.png in Resources */,
 				A45734D6262D7B2D003B0754 /* Assets.xcassets in Resources */,
+				A43BF4BC26303BD700711441 /* cloudy.png in Resources */,
 				A45734D4262D7B2B003B0754 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,9 +312,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A45734D1262D7B2B003B0754 /* ViewController.swift in Sources */,
+				A45734D1262D7B2B003B0754 /* WeatherViewController.swift in Sources */,
 				A45734CD262D7B2B003B0754 /* AppDelegate.swift in Sources */,
 				A45734CF262D7B2B003B0754 /* SceneDelegate.swift in Sources */,
+				A4BB45302630634800623609 /* WeatherView.swift in Sources */,
+				A4CFD4B2263BE162000CCD92 /* WeatherModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -593,6 +649,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A43BF4B0262E784700711441 /* XCRemoteSwiftPackageReference "ios-training" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/yumemi-inc/ios-training.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A43BF4B1262E784700711441 /* YumemiWeather */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A43BF4B0262E784700711441 /* XCRemoteSwiftPackageReference "ios-training" */;
+			productName = YumemiWeather;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A45734C1262D7B2B003B0754 /* Project object */;
 }

@@ -11,12 +11,12 @@ import UIKit
 class WeatherView: UIView {
     
     @IBOutlet weak var imageView: UIImageView!
-    
     @IBOutlet weak var blueLabel: UILabel!
-    
     @IBOutlet weak var redLabel: UILabel!
     
+    @IBOutlet weak var closeButton: UIButton!
     
+    @IBOutlet weak var reloadButton: UIButton!
     
     override init(frame: CGRect) {
             super.init(frame: frame)

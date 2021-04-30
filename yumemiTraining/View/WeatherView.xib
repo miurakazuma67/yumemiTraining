@@ -68,8 +68,10 @@
             </constraints>
             <connections>
                 <outlet property="blueLabel" destination="FhT-0z-7w2" id="60t-Pz-yfM"/>
+                <outlet property="closeButton" destination="ZoA-Eb-5zL" id="3uP-8q-LWT"/>
                 <outlet property="imageView" destination="Ilv-P0-cBk" id="ni3-cT-iI4"/>
                 <outlet property="redLabel" destination="dDO-gr-vhv" id="HCX-uV-vBL"/>
+                <outlet property="reloadButton" destination="hR0-vg-iUh" id="G8V-jt-nj3"/>
             </connections>
             <point key="canvasLocation" x="148" y="98"/>
         </view>
