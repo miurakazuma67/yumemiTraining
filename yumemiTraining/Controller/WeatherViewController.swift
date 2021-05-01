@@ -36,5 +36,26 @@ class WeatherViewController: UIViewController {
     }
 }
 
-extension
+extension WeatherViewController: WeatherModelDelegate {
+    
+    func setImage(weather: String, color: UIColor) {
+        weatherView.imageView.image = UIImage(named: weather)
+        weatherView.imageView.tintColor = color
+    }
+    
+    func weatherModel(_ weatherModel: WeatherModel, didReturnWeather weather: String) {
+        switch weather {
+        case "sunny":
+            setImage(weather: weather, color: .red)
+        case "cloudy":
+            setImage(weather: weather, color: .gray)
+        default:
+        setImage(weather: weather, color: .blue)
+        }
+    }
+    
+    func weatherModel(_ weatherModel: WeatherModel, didReturnError error: Error) {
+        <#code#>
+    }
+}
 
